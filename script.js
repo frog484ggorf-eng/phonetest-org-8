@@ -303,4 +303,8 @@ function showResultChart(score) {
             }
         }
     });
+  document.addEventListener("DOMContentLoaded", () => {
+  document.body.innerHTML = document.body.innerHTML.replace(/—/g, "-");
+});
+
 }
