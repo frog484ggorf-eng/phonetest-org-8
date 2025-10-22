@@ -105,6 +105,13 @@ function showResult(score, answersArr){
   quizSection.style.display = 'none';
   resultSection.style.display = 'block';
   scoreText.innerHTML = `Ваш балл: <strong>${score}</strong> из ${QUESTIONS.length * 4}.`;
+  // === Отображение стрелки на шкале ===
+const pointer = document.getElementById('scorePointer');
+if (pointer) {
+  const percent = (score / (QUESTIONS.length * 4)) * 100;
+  pointer.style.left = `calc(${percent}% - 7px)`; // позиционируем стрелку
+}
+
   recommendationsDiv.innerHTML = '';
   const level = interpretScore(score);
   const mainReco = document.createElement('div');
