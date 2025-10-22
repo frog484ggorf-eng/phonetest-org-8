@@ -159,8 +159,7 @@ function showResult(score, answersArr){
     URL.revokeObjectURL(url);
   });
   recommendationsDiv.appendChild(downloadBtn);
-    // показать диаграмму с результатом
-  showResultChart(score);
+   
 
 
   // Scroll to top of results
