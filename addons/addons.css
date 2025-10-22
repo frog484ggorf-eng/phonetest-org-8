@@ -1,0 +1,10 @@
+.badge {
+  display:inline-block;
+  background:linear-gradient(90deg,#6ee7b7,#4ade80);
+  color:#022;
+  border-radius:8px;
+  padding:4px 8px;
+  margin:2px;
+  font-size:13px;
+  font-weight:600;
+}

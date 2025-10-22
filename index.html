@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Тест: Сколько вы сидите в телефоне</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Тест: Сколько вы сидите в телефоне?</h1>
+    <p class="lead">Ответьте честно — тест займёт ~3 минуты. После — получите персональные рекомендации.</p>
+
+    <section id="quiz">
+      <form id="quizForm">
+        <ol id="questionsList"></ol>
+
+        <div class="controls">
+          <button type="button" id="prevBtn" class="btn" disabled>Назад</button>
+          <button type="button" id="nextBtn" class="btn">Далее</button>
+          <button type="submit" id="submitBtn" class="btn primary" style="display:none">Узнать рекомендации</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="result" style="display:none">
+      <h2>Результат</h2>
+      <p id="scoreText"></p>
+      <div id="recommendations"></div>
+      <button id="restartBtn" class="btn">Пройти ещё раз</button>
+    </section>
+
+    <footer>
+      <small>Сайт генерирует общие рекомендации и не заменяет советы специалиста.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+
+<link rel="stylesheet" href="addons/addons.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+<script src="addons/chart.js" defer></script>
+<script src="addons/history.js" defer></script>
+<script src="addons/badges.js" defer></script>
+<script src="addons/share.js" defer></script>
+<script src="addons/tip.js" defer></script>
+<script src="addons/lang.js" defer></script>
+<script src="addons/analytics.js" defer></script>
+
+
+    <div id="chartContainer" style="display:none; text-align:center; margin-top:30px;">
+        <h3>Визуализация результатов</h3>
+        <canvas id="resultChart" width="300" height="300"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </body>
+    
+</html>
